@@ -1,0 +1,112 @@
+/* ===== General Page Styling ===== */
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== Card and Table ===== */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* ===== Headers ===== */
+h1, h4 {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ===== Inputs ===== */
+input, textarea {
+  border-radius: 8px !important;
+  border: 1px solid #ced4da !important;
+}
+
+input:focus, textarea:focus {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 4px rgba(13, 110, 253, 0.4);
+}
+
+/* ===== Auth Section ===== */
+#auth-area {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#user-area {
+  background: #f1f9ff;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d0e7ff;
+}
+
+
+/* ---------- Table alignment fix ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#tasksTable td:nth-child(1) { width: 40%; }  /* Title column */
+#tasksTable td:nth-child(2) { width: 25%; }  /* Due column */
+#tasksTable td:nth-child(3) { width: 15%; }  /* Status column */
+#tasksTable td:nth-child(4) { width: 20%; }  /* Actions column */
+
+button {
+  margin-right: 5px;
+}
